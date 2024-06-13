@@ -1,0 +1,14 @@
+package com.rays.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableWebSecurit
+public class WebSecurityConfig extends WebSecurityConfigurerAdapteR {
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http.csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+		http.cors();
+	}
+}

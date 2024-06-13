@@ -1,0 +1,16 @@
+package com.rays.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import com.rays.common.ORSResponse;
+
+public class AttachmentDAO {
+
+	@PersistenceContext
+	public EntityManager entityManager;
+	
+	public long add() {
+		return 0;
+	}
+}
